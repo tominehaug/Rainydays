@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Shipping details | Rainydays</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Shipping details." />
+    <link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32x32.png" />
+	<link rel="icon" type="image/png" sizes="512x512" href="../assets/android-chrome-512x512.png" />
+    <link rel="icon" type="image/png" sizes="512x512" href="../assets/android-chrome-192x192.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../assets/favicon-16x16.png" />
+    <link href="../css/home-page.css" rel="stylesheet">
+</head>
+
+<body>
+<header>
+    <a href="../"><img alt="Rainydays logo" src="../images/rainydays-logo.png" /></a>
+<ul>
+    <li><a href="../about.html">About</a></li>
+    <li><a href="../contact.html">Contact</a></li>
+    <li>Sign in</li>
+    <li><a href="/shopping-cart/"><img src="../assets/shopping-cart-icon3.png" alt="go to shopping cart" /></a></li>
+</ul>
+</header>
+<main>
+    <!--progress bar goes here-->
+    <h1>Shipping details</h1>
+    <form>
+        <fieldset>
+            <legend>Your details</legend>
+            <label for="name">Your name</label>
+            <input type="text" name="name" id="name" class="form__input" required>
+            <label for="phone">Your phone number</label>
+            <input type="tel" name="phone" id="phone" class="form__input">
+            <label for="email">Your email address</label required>
+            <input type="email" name="email" id="email" class="form__input" required>
+        </fieldset>
+        <fieldset>
+            <legend>Your address</legend>
+            <label for="streetname">Street name</label>
+            <input type="text" name="streetname" id="streetname" class="form__input" required>
+            <label for="streetnumber">Street number</label>
+            <input type="number" name="streetnumber" id="streetnumber" class="form__input" required>
+            <label for="city">City</label>
+            <input type="text" name="city" id="city" class="form__input" required>
+            <label for="zipcode">Zip-code</label>
+            <input type="number" name="zipcode" id="zipcode" class="form__input" required>
+        </fieldset>
+    </form>
+    <aside>
+        <h2>Order summary</h2>
+        <p>SCOTT Light Resistance 75</p>
+        <img src="../images/RainyDays_Jacket2.jpg" alt="Image of SCOTT Light Resistance 75.">
+        <p>Size: S</p>
+        <p>Quantity: 1</p>
+        <p>Price: $85</p>
+        <p>SUBTOTAL: $85</p>
+    </aside>
+    <a href="/shopping-cart/">Back</a>
+    <a href="payment-details.html">Continue</a>
+</main>
+<footer>
+    <ul>
+        <li><img src="../assets/instagram-icon.png" alt="link to our instagram"></li>
+        <li><img src="../assets/facebook-icon.png" alt="link to our facebook"></li>
+        <li><img src="../assets/youtube-icon.png" alt="link to our youtube channel"></li>
+    </ul>
+</footer>
+</body>
+</html>
