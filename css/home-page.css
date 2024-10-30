@@ -13,24 +13,52 @@ nav, #hamburger-menu {
 
 header{
     position: relative;
-    display: flex;
     width: 100%;
     background-color: #0A3641;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    display: grid;
+    grid-template-columns: 6fr 6fr;
 }
 
 .logo{
-    max-width: 200px;;
+    max-width: 260px;
+    padding: 30px;
+}
+
+.cart{
+    max-width: 70px;
+}
+
+nav{
+    position: absolute;
 }
 
 nav ul{
     list-style: none;
     display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
 }
 
-nav{
-    position: absolute;
-    right: 0px;
+nav li{
+    padding: 30px 50px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 2em;
+    color: #D36245;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+nav a:hover{
+    font-weight: 700;
 }
 
 @media (min-width: 600px) {
@@ -46,3 +74,6 @@ nav{
     }
 }
 
+@media (min-width:599px) {
+    
+}
