@@ -1,7 +1,10 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
+/*HEADER DESIGN START*/
 
 nav, #hamburger-menu {
     display: none;
@@ -16,12 +19,11 @@ header{
     width: 100%;
     background-color: #0A3641;
     box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.10);
-    display: grid;
-    grid-template-columns: 6fr 6fr;
 }
 
 .logo{
-    max-width: 260px;
+    max-width: 320px;
+    min-width: 300px;
     padding: 30px;
 }
 
@@ -29,17 +31,31 @@ header{
     max-width: 70px;
 }
 
+.hamburger {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+    cursor: pointer;
+    z-index: 100;
+}
+
 nav{
     position: absolute;
+    display: none;
+    width: 100%;
+    top: 100%;
+    left: 0;
+    background-color: #0A3641;
+    padding: 20px 0;
 }
 
 nav ul{
     list-style: none;
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
     align-items: center;
-    padding-bottom: 20px;
-    padding-top: 20px;
 }
 
 nav li{
@@ -62,18 +78,50 @@ nav a:hover{
 }
 
 @media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
     nav{
         display: block;
         position: static;
+        width: auto;
+        padding: 0;
     }
-    .hamburger{
-        display: none;
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li {
+        padding: 0 30px;
+        width: auto;
     }
     nav a{
         display: inline-block;
     }
+    .hamburger{
+        display: none;
+    }
 }
 
-@media (min-width:599px) {
+@media (max-width: 599px){
+    nav a{
+        font-size: 1.2em;
+    }
+}
+
+/*HEADER DESIGN END*/
+
+/*FOOTER DESIGN START*/
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer img{
     
 }
