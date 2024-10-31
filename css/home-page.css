@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body{
+    min-height: 100vh;
+}
+
 /*HEADER DESIGN START*/
 
 nav, #hamburger-menu {
@@ -60,6 +64,7 @@ nav ul{
 
 nav li{
     padding: 30px 50px;
+    
 }
 
 nav a{
@@ -96,7 +101,7 @@ nav a:hover{
     nav li {
         padding: 0 30px;
         width: auto;
-    }
+    }    
     nav a{
         display: inline-block;
     }
@@ -113,7 +118,18 @@ nav a:hover{
 
 /*HEADER DESIGN END*/
 
+
+
 /*FOOTER DESIGN START*/
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    background-color: #0A3641;
+}
 
 footer ul{
     list-style: none;
@@ -122,6 +138,8 @@ footer ul{
     align-items: center;
 }
 
-footer img{
-    
+footer ul li img {
+    outline: 2px solid red;
+    width: 5em;
+    margin: 10px;
 }
