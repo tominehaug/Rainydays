@@ -138,8 +138,7 @@ footer ul{
     align-items: center;
 }
 
-footer ul li img {
-    outline: 2px solid red;
-    width: 5em;
-    margin: 10px;
+footer ul li i {
+    margin: 40px;
+    font-size: 55px;
 }
