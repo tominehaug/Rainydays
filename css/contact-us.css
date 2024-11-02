@@ -60,7 +60,6 @@ nav ul{
 
 nav li{
     padding: 30px 50px;
-    
 }
 
 nav a{
@@ -115,47 +114,42 @@ nav a:hover{
 /*HEADER DESIGN END*/
 
 body{
-    background-image: url(../images/water.jpg);
+    background-image: url(../images/leaves.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
 
 main{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: block;
     background-color: white;
-    position: absolute;
-    right:0;
+    max-width: 800px;
 }
 
 h1{
-    display: flex;
+    display: block;
     padding: 10px;
+    background-color: white;
     font-family: "Instrument Sans";
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
     font-size: 96px;
-    color: #0A3641;
+    color: #5A6338;
+    position: absolute;
+    left: 6em;
 }
 
 p{
-    max-width: 800px;
-    display: flex;
+    display: block;
     padding: 2em;
     font-family: "Instrument Sans";
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    font-size: 24px;
+    font-size: 32px;
     color: #0A3641;
-}
-
-.bold{
-    font-weight: 600;
 }
 
 /*FOOTER DESIGN START*/
@@ -163,7 +157,7 @@ p{
 footer{
     position: absolute;
     bottom: 0;
-    right:0;
+    left:0;
     width: 800px;
     display:flex;
     justify-content: center;
