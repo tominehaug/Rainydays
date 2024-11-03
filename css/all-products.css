@@ -78,46 +78,23 @@ nav a:hover{
     font-weight: 700;
 }
 
-@media (min-width: 600px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav{
-        display: block;
-        position: static;
-        width: auto;
-        padding: 0;
-    }
-    nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    nav li {
-        padding: 0 30px;
-        width: auto;
-    }    
-    nav a{
-        display: inline-block;
-    }
-    .hamburger{
-        display: none;
-    }
-}
-
-@media (max-width: 599px){
-    nav{
-        background-color: #0A3641;
-    } 
-    
-    nav a{
-        font-size: 1.2em;
-    }
-}
-
 /*HEADER DESIGN END*/
 
+h1{
+    color: #0A3641;
+    font-family: "Instrument Sans";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 2;
+    text-transform: uppercase;
+    display: block;
+    margin: 50px;
+}
+
+main{
+    text-align: center;
+}
 
 main img{
     max-width: 500px;
@@ -129,6 +106,7 @@ main img{
     grid-template-rows: auto, 80px, auto, 80px, auto, 80px, auto, 80px, auto, 80px, auto, 80px, auto, 80px;
     grid-column-gap: 0px;
     grid-row-gap: 40px;
+    text-align: right;
 }
 
 .jacket1 { grid-area: 1 / 1 / 2 / 2; }
@@ -165,11 +143,14 @@ main img{
     text-transform: uppercase;
     color: rgb(95, 93, 93);
     position: relative;
+    text-align: center;
 }
 
 aside{
+    display: block;
     padding: 4em;
     text-align: left;
+    float:left;
 }
 
 aside h2{
@@ -212,4 +193,55 @@ footer ul{
 footer ul li i {
     margin: 40px;
     font-size: 55px;
+}
+
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: block;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li {
+        padding: 0 30px;
+        width: auto;
+    }    
+    nav a{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 599px){
+    nav{
+        background-color: #0A3641;
+    } 
+    
+    nav a{
+        font-size: 1.2em;
+    }
+
+    .productlist{
+        display:block;
+        text-align: center;
+    }
+
+    main img{
+        max-width: 350px;
+    }
+    aside{
+        float: none;
+    }
 }

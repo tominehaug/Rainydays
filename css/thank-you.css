@@ -47,6 +47,7 @@ body{
 
 main{
     text-align: center;
+    margin-bottom: 206px;
 }
 
 h1{
@@ -57,7 +58,7 @@ h1{
     font-weight: 700;
     line-height: 2;
     text-transform: uppercase;
-    margin-top: 3em;
+    margin-top: 2em;
 }
 
 p{
@@ -90,11 +91,11 @@ p{
 /*FOOTER DESIGN START*/
 
 footer{
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
-    display:flex;
+    display: flex;
     justify-content: center;
+    background-color: #0a3641c2;
 }
 
 footer ul{
@@ -109,3 +110,31 @@ footer ul li i {
     font-size: 55px;
 }
 
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+@media (max-width: 599px){
+    header{
+        display:flex;
+        flex-direction: column;
+    }
+    .progress{
+        max-width: 90vw;
+    }
+    body{
+        background-position: right;
+    }
+    h1, p{
+        line-height: normal;
+        margin:20px;
+        text-shadow: #0a3641be;
+    }
+    .slogan{
+        margin-bottom: 50px;
+    }
+}

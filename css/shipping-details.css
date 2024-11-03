@@ -79,43 +79,6 @@ nav a:hover{
     font-weight: 700;
 }
 
-@media (min-width: 600px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav{
-        display: block;
-        position: static;
-        width: auto;
-        padding: 0;
-    }
-    nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    nav li {
-        padding: 0 30px;
-        width: auto;
-    }    
-    nav a{
-        display: inline-block;
-    }
-    .hamburger{
-        display: none;
-    }
-}
-
-@media (max-width: 599px){
-    nav a{
-        font-size: 1.2em;
-    }
-    nav{
-        background-color: #0A3641;
-    }
-}
-
 /*HEADER DESIGN END*/
 
 main{
@@ -153,7 +116,7 @@ h1{
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 3;
+    line-height: 2;
     text-transform: uppercase;
 }
 
@@ -173,7 +136,9 @@ h2{
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 3;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 p{
@@ -208,6 +173,7 @@ form{
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    margin-bottom: 40px;
 }
 
 input{
@@ -280,3 +246,69 @@ footer ul li i {
     font-size: 55px;
 }
 
+/*FOOTER DESIGN END*/
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: block;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li {
+        padding: 0 30px;
+        width: auto;
+    }    
+    nav a{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 599px){
+    nav{
+        background-color: #0A3641;
+    }
+    nav a{
+        font-size: 26px;
+    }
+    .gridparent{
+        display: block;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 85vw;
+    }
+    .progress{
+        width: 85vw;
+        margin: 30px;
+    }
+    .subtotal{
+        font-size: 30px;
+    }
+    main{
+        margin-left: 30px;
+    }
+    form{
+        max-width: 85vw;
+    }
+    aside{
+        max-width: 85vw;
+        padding: 2em;
+    }
+}

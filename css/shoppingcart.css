@@ -79,43 +79,6 @@ nav a:hover{
     font-weight: 700;
 }
 
-@media (min-width: 600px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav{
-        display: block;
-        position: static;
-        width: auto;
-        padding: 0;
-    }
-    nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    nav li {
-        padding: 0 30px;
-        width: auto;
-    }    
-    nav a{
-        display: inline-block;
-    }
-    .hamburger{
-        display: none;
-    }
-}
-
-@media (max-width: 599px){
-    nav a{
-        font-size: 1.2em;
-    }
-    nav{
-        background-color: #0A3641;
-    }
-}
-
 /*HEADER DESIGN END*/
 
 main{
@@ -137,8 +100,9 @@ h1{
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
-    line-height: 3;
+    line-height: 1.5;
     text-transform: uppercase;
+    margin: 10px;
 }
 
 h2{
@@ -163,6 +127,7 @@ section{
 section img{
     max-width: 300px;
     height: auto;
+    margin-right: 20px;
 }
 
 p{
@@ -179,13 +144,14 @@ p{
     text-align: end;
     margin-top: 3em;
     margin-right: 5em;
-    padding:5px;
+    padding: 5px;
     font-size: 36px;
     color:#000;
     font-weight: 700;
     text-transform: uppercase;
     border-top-style: solid;
     border-color: black;
+    max-width: 85vw;
 }
 
 aside{
@@ -241,3 +207,67 @@ footer ul li i {
     font-size: 55px;
 }
 
+/*FOOTER DESIGN END*/
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: block;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li {
+        padding: 0 30px;
+        width: auto;
+    }    
+    nav a{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 599px){
+    nav{
+        background-color: #0A3641;
+    }
+    nav a{
+        font-size: 26px;
+    }
+    section{
+        display:block;
+        max-width: 85vw;
+    }
+    section img{
+        max-width: 180px;
+    }
+    .subtotal{
+        font-size: 24px;
+        width: 100%;
+    }
+    .buttons {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 85vw;
+    }
+    .progress{
+        width: 85vw;
+        margin: 30px;
+    }
+    main{
+        margin-left: 30px;
+    }
+}

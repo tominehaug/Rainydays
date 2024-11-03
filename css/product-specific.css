@@ -79,44 +79,6 @@ nav a:hover{
     font-weight: 700;
 }
 
-@media (min-width: 600px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav{
-        display: block;
-        position: static;
-        width: auto;
-        padding: 0;
-    }
-    nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    nav li {
-        padding: 0 30px;
-        width: auto;
-    }    
-    nav a{
-        display: inline-block;
-    }
-    .hamburger{
-        display: none;
-    }
-}
-
-@media (max-width: 599px){
-    nav a{
-        font-size: 1.2em;
-    }
-
-    nav{
-        background-color: #0A3641;
-    }
-}
-
 /*HEADER DESIGN END*/
 
 main{
@@ -141,8 +103,9 @@ h2{
     line-height: normal;
 }
 
-img{
+main img{
     max-width: 600px;
+    margin-bottom: 1.5em;
 }
 
 .category {
@@ -220,6 +183,7 @@ main{
 
 .cartbutton{
     margin-top: 4em;
+    margin-bottom: 3em;
 }
 
 .cartbutton a{
@@ -291,3 +255,50 @@ footer ul li i {
     font-size: 55px;
 }
 
+/*FOOTER DESIGN END*/
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: block;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li {
+        padding: 0 30px;
+        width: auto;
+    }    
+    nav a{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+@media (max-width: 599px){
+    nav{
+        background-color: #0A3641;
+    }
+    nav a{
+        font-size: 26px;
+    }
+
+    main{
+        display: block;
+    }
+
+    main img{
+        max-width: 440px;
+    }
+
+}
