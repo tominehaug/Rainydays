@@ -131,7 +131,7 @@ main{
 }
 
 aside{
-    grid-row: span 2/span 2;
+    grid-row: span 3/span 3;
     grid-row-start: 1;
     grid-column-start: 3;
     padding: 4em;
@@ -185,9 +185,14 @@ p{
     font-size: 40px;
     font-weight: 600;
     text-transform: uppercase;
-    margin-top: 1em;
-    border-top-style: solid;
+    text-align: end;
+}
+
+.shipping{
+    margin-top: 2em;
+    border-bottom-style: solid;
     border-color: #000;
+    text-align: end;
 }
 
 form{
@@ -202,14 +207,8 @@ form{
     line-height: normal;
 }
 
-
 input{
-    margin: 8px 0;
-    padding: 15px 20px;
     width: 100%;
-    border-style: solid;
-    border-color: #D36245;
-    border-width: 3px;
 }
 
 legend{
@@ -218,6 +217,9 @@ legend{
     color: #0A3641;
 }
 
+label{
+    padding: 1em;
+}
 
 .buttons{
     grid-row-start: 2;
@@ -239,6 +241,15 @@ legend{
     padding: 1em;
     background-color:#D36245;
     margin: 12px;
+}
+
+.buttons .back{
+    color:#D36245;
+    background-color: white;
+}
+
+main a:hover{
+    text-decoration: underline;
 }
 
 /*FOOTER DESIGN START*/

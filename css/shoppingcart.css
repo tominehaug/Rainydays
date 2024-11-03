@@ -119,25 +119,12 @@ main{
     margin-left: 60px;
 }
 
-.progress{
-    margin: 50px;
-}
-
-main a{
-    text-decoration: none;
-    font-size: 2em;
-    color: #D36245;
-    font-family: "Instrument Sans";
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: uppercase;
-    margin-top: 3em;
-    margin-right: 3em;
-}
-
 main a:hover{
     text-decoration: underline;
+}
+
+.progress{
+    margin: 50px;
 }
 
 h1{
@@ -180,38 +167,51 @@ p{
     font-size: 25px;
     font-style: normal;
     font-weight: 400;
-    line-height: normal;
+    line-height: 2;
 }
 
-.price{
+.subtotal{
+    display: block;
+    text-align: end;
     margin-top: 3em;
+    margin-right: 5em;
     padding:5px;
     font-size: 36px;
     color:#000;
     font-weight: 700;
     text-transform: uppercase;
     border-top-style: solid;
-    border-color: #D36245;
+    border-color: black;
 }
 
 aside{
     display: flex;
     flex-direction: row;
 }
-.shopmore{
-    display:flex;
-    padding:1em;
-    background-color: #D36245;
-}
 
-.shopmore a{
-    color: white;
-}
-
-.continue{
+.buttons {
     display: flex;
-    padding:1em;
-    margin-left:1em;
+    flex-direction: row;
+}
+
+.buttons a{
+    display: flex;
+    text-decoration: none;
+    font-size: 2em;
+    color: white;
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    padding: 1em;
+    background-color:#D36245;
+    margin: 12px;
+}
+
+.buttons .continue a{
+    color:#D36245;
+    background-color: white;
 }
 
 /*FOOTER DESIGN START*/

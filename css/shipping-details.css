@@ -244,6 +244,15 @@ legend{
     margin: 12px;
 }
 
+.buttons .back{
+    color:#D36245;
+    background-color: white;
+}
+
+main a:hover{
+    text-decoration: underline;
+}
+
 /*FOOTER DESIGN START*/
 
 footer{
