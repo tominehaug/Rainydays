@@ -13,7 +13,7 @@
 <!--icon for hamburger menu-->
     <script src="https://kit.fontawesome.com/4b71fec88a.js" crossorigin="anonymous"></script>
 <!--stylesheet-->
-    <link href="../css/home-page.css" rel="stylesheet">
+    <link href="../css/shoppingcart.css" rel="stylesheet">
 <!--font sources-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat+Subrayada:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
@@ -21,28 +21,39 @@
 </head>
 
 <body>
-<header>
-    <a href="../"><img alt="Rainydays logo" src="../images/rainydays-logo.png" /></a>
-<ul>
-    <li><a href="../about.html/">About</a></li>
-    <li><a href="../contact.html/">Contact</a></li>
-    <li>Sign in</li>
-    <li><a href="/shopping-cart/"><img src="../assets/shopping-cart-icon3.png" alt="go to shopping cart" /></a></li>
-</ul>
-</header>
+    <header>
+        <a href="../"><img alt="Rainydays logo" src="../images/rainydays-logo.png" class="logo" /></a>
+        <input type="checkbox" id="hamburger-menu" />
+        <label for="hamburger-menu" class="hamburger"><i class="fa-solid fa-bars" style="color: #d36245;"></i></label>
+        <nav>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../sign-in.html">Sign in</a></li>
+                <li><a href="/shopping-cart/"><img src="../assets/shopping-cart-icon3.png" alt="go to shopping cart" class="cart"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="../images/progressbar1.png" alt="Indication of progress. You are at step one of four." class="progress">
 <main>
-    <!--progress bar goes here-->
     <h1>Shopping cart: items</h1>
     <section>
-        <h2>SCOTT Light Resistance 75</h2>
         <img src="../images/RainyDays_Jacket2.jpg" alt="Scott Light Resistance 75. Grey, shaped and thin material.">
+        <div>
+        <h2>SCOTT Light Resistance 75</h2>
         <p>Size: S</p>
         <p>Quantity: 1</p>
-        <p>SUBTOTAL: $85</p>
+        <p class="price">Subtotal: $85</p>
+        <div>
     </section>
-    <div>
+    <aside>
+    <div class="shopmore">
+        <a href="/products/">Shop more</a>
+    </div>
+    <div class="continue">
         <a href="shipping-details.html">Continue</a>
     </div>
+</aside>
 </main>
 <footer>
     <ul>

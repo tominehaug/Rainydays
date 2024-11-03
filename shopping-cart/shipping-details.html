@@ -13,7 +13,7 @@
 <!--icon for hamburger menu-->
     <script src="https://kit.fontawesome.com/4b71fec88a.js" crossorigin="anonymous"></script>
 <!--stylesheet-->
-    <link href="../css/home-page.css" rel="stylesheet">
+    <link href="../css/shipping-details.css" rel="stylesheet">
 <!--font sources-->
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Montserrat+Subrayada:wght@400;700&family=Open+Sans:wght@300;400&display=swap');
@@ -21,19 +21,25 @@
 </head>
 
 <body>
-<header>
-    <a href="../"><img alt="Rainydays logo" src="../images/rainydays-logo.png" /></a>
-<ul>
-    <li><a href="../about.html">About</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li>Sign in</li>
-    <li><a href="/shopping-cart/"><img src="../assets/shopping-cart-icon3.png" alt="go to shopping cart" /></a></li>
-</ul>
-</header>
+    <header>
+        <a href="../"><img alt="Rainydays logo" src="../images/rainydays-logo.png" class="logo" /></a>
+        <input type="checkbox" id="hamburger-menu" />
+        <label for="hamburger-menu" class="hamburger"><i class="fa-solid fa-bars" style="color: #d36245;"></i></label>
+        <nav>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../sign-in.html">Sign in</a></li>
+                <li><a href="/shopping-cart/"><img src="../assets/shopping-cart-icon3.png" alt="go to shopping cart" class="cart"/></a></li>
+            </ul>
+        </nav>
+    </header>
+<img src="../images/progressbar2.png" alt="Indication of progress. You are at step two of four." class="progress">
 <main>
-    <!--progress bar goes here-->
-    <h1>Shipping details</h1>
+<h1>Shipping details</h1>
+<div class="gridparent">
     <form>
+        <div class="details">
         <fieldset>
             <legend>Your details</legend>
             <label for="name">Your name</label>
@@ -43,6 +49,8 @@
             <label for="email">Your email address</label required>
             <input type="email" name="email" id="email" class="form__input" required>
         </fieldset>
+        </div>
+        <div class="address">
         <fieldset>
             <legend>Your address</legend>
             <label for="streetname">Street name</label>
@@ -54,19 +62,24 @@
             <label for="zipcode">Zip-code</label>
             <input type="number" name="zipcode" id="zipcode" class="form__input" required>
         </fieldset>
+        </div>
     </form>
     <aside>
         <h2>Order summary</h2>
-        <p>SCOTT Light Resistance 75</p>
         <img src="../images/RainyDays_Jacket2.jpg" alt="Image of SCOTT Light Resistance 75.">
+        <p class="product">SCOTT Light Resistance 75</p>
         <p>Size: S</p>
         <p>Quantity: 1</p>
         <p>Price: $85</p>
-        <p>SUBTOTAL: $85</p>
+        <p class="subtotal">Subtotal: $85</p>
     </aside>
+    <div class="buttons">
     <a href="/shopping-cart/">Back</a>
     <a href="payment-details.html">Continue</a>
+    </div>
+</div>
 </main>
+</body>
 <footer>
     <ul>
         <li><i class="fa-brands fa-facebook" style="color: #d36245;" alt="link to our facebook"></i></li>
@@ -74,5 +87,4 @@
         <li><i class="fa-brands fa-youtube" style="color: #d36245;" alt="link to our youtube channel"></i></li>
     </ul>
 </footer>
-</body>
 </html>

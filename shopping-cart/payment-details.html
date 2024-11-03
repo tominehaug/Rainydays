@@ -21,17 +21,21 @@
 </head>
 
 <body>
-<header>
-    <a href="../"><img alt="Rainydays logo" src="../images/rainydays-logo.png" /></a>
-<ul>
-    <li><a href="../about.html">About</a></li>
-    <li><a href="../contact.html">Contact</a></li>
-    <li>Sign in</li>
-    <li><a href="/shopping-cart/"><img src="../assets/shopping-cart-icon3.png" alt="go to shopping cart" /></a></li>
-</ul>
-</header>
+    <header>
+        <a href="../"><img alt="Rainydays logo" src="../images/rainydays-logo.png" class="logo" /></a>
+        <input type="checkbox" id="hamburger-menu" />
+        <label for="hamburger-menu" class="hamburger"><i class="fa-solid fa-bars" style="color: #d36245;"></i></label>
+        <nav>
+            <ul>
+                <li><a href="../about.html">About</a></li>
+                <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../sign-in.html">Sign in</a></li>
+                <li><a href="/shopping-cart/"><img src="../assets/shopping-cart-icon3.png" alt="go to shopping cart" class="cart"/></a></li>
+            </ul>
+        </nav>
+    </header>
+    <img src="../images/progressbar3.png" alt="Indication of progress. You are at step three of four." class="progress">
 <main>
-    <!--progress bar goes here-->
     <h1>Payment details</h1>
     <h2>Selct payment method</h2>
     <form>
