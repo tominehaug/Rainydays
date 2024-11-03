@@ -47,8 +47,9 @@ nav{
     width: 100%;
     top: 100%;
     left: 0;
-    background-color: #0A3641;
+    background-color: none;
     padding: 20px 0;
+    z-index: 1;
 }
 
 nav ul{
@@ -109,6 +110,9 @@ nav a:hover{
 @media (max-width: 599px){
     nav a{
         font-size: 1.2em;
+    }
+    nav{
+        background-color: #0A3641;
     }
 }
 

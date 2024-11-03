@@ -51,8 +51,9 @@ nav{
     width: 100%;
     top: 100%;
     left: 0;
-    background-color: #0A3641;
+    background-color: none;
     padding: 20px 0;
+    z-index: 1;
 }
 
 nav ul{
@@ -82,56 +83,24 @@ nav a:hover{
     font-weight: 700;
 }
 
-@media (min-width: 600px) {
-    header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-    nav{
-        display: block;
-        position: static;
-        width: auto;
-        padding: 0;
-    }
-    nav ul {
-        flex-direction: row;
-        justify-content: flex-end;
-    }
-    nav li {
-        padding: 0 30px;
-        width: auto;
-    }    
-    nav a{
-        display: inline-block;
-    }
-    .hamburger{
-        display: none;
-    }
-}
-
-@media (max-width: 599px){
-    nav a{
-        font-size: 1.2em;
-    }
-}
-
 /*HEADER DESIGN END*/
+
 
 body{
     background-image: url(../images/water.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    max-height: 100vh;
+    min-height: 100vh;
 }
 
 main{
     display:block;
-    position: fixed;
+    position: relative;
     right:0;
     background-color: white;
     max-width: 700px;
     padding:2em;
+    padding-bottom: 62px;
 }
 
 h1{
@@ -162,8 +131,8 @@ p{
 /*FOOTER DESIGN START*/
 
 footer{
-    position:absolute;
-    bottom:0;
+    position: relative;
+    bottom: 0;
     width: 100%;
     justify-content: center;
     background-color: white;
@@ -180,4 +149,45 @@ footer ul{
 footer ul li i {
     margin: 40px;
     font-size: 55px;
+}
+
+/*FOOTER DESIGN END*/
+
+@media (min-width: 600px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    nav{
+        display: block;
+        position: static;
+        width: auto;
+        padding: 0;
+    }
+    nav ul {
+        flex-direction: row;
+        justify-content: flex-end;
+    }
+    nav li {
+        padding: 0 30px;
+        width: auto;
+    }    
+    nav a{
+        display: inline-block;
+    }
+    .hamburger{
+        display: none;
+    }
+}
+
+
+@media (max-width: 599px){
+    nav a{
+        font-size: 1.2em;
+    }
+
+    h1{
+        font-size: 70px;
+    }
 }

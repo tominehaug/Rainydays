@@ -56,6 +56,7 @@ nav{
     left: 0;
     background-color: none;
     padding: 20px 0;
+    z-index: 1;
 }
 
 nav ul{
@@ -111,26 +112,33 @@ nav a:hover{
     .hamburger{
         display: none;
     }
+
 }
 
 @media (max-width: 599px){
+    nav{
+        background-color: #0A3641;
+    }
+    
     nav a{
         font-size: 1.2em;
     }
+
 }
 
 /*HEADER DESIGN END*/
 
 .explore-button{
-    display: block;
-    position: absolute;
-    top: 50%;
-    left: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 84vh;
 }
 
 .explore-button a{
     text-decoration: none;
-    font-size: 2em;
+    font-size: 30px;
     color: white;
     font-family: "Instrument Sans";
     font-style: normal;
@@ -144,8 +152,7 @@ nav a:hover{
 /*FOOTER DESIGN START*/
 
 footer{
-    position: absolute;
-    bottom: 0;
+    position: relative;
     width: 100%;
     display:flex;
     justify-content: center;

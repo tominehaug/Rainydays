@@ -51,8 +51,9 @@ nav{
     width: 100%;
     top: 100%;
     left: 0;
-    background-color: #0A3641;
+    background-color: none;
     padding: 20px 0;
+    z-index: 1;
 }
 
 nav ul{
@@ -80,6 +81,87 @@ nav a{
 nav a:hover{
     font-weight: 700;
 }
+
+/*HEADER DESIGN END*/
+
+body{
+    background-image: url(../images/leaves.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+main{
+    display:block;
+    position: relative;
+    background-color: white;
+    max-width: 800px;
+    padding: 2em;
+    padding-bottom: 180px;
+}
+
+h1{
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+    font-size: 96px;
+    color: #5A6338;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+p{
+    font-family: "Instrument Sans";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3;
+    font-size: 28px;
+    color: #0A3641;
+}
+
+.title p{
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.frame{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+.title{
+    grid-column-start: 1;
+}
+
+.content{
+    grid-column-start: 2;
+}
+
+/*FOOTER DESIGN START*/
+
+footer{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    background-color: white;
+    display: flex;
+}
+
+footer ul{
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer ul li i {
+    margin: 40px;
+    font-size: 55px;
+}
+
+/*FOOTER DESIGN END*/
 
 @media (min-width: 600px) {
     header {
@@ -110,85 +192,19 @@ nav a:hover{
 }
 
 @media (max-width: 599px){
+    nav{
+        background-color: #0A3641;
+     }
+ 
     nav a{
         font-size: 1.2em;
     }
-}
 
-/*HEADER DESIGN END*/
+    h1{
+        font-size: 60px;
+    }
 
-body{
-    background-image: url(../images/leaves.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    min-height: 100vh;
-}
-
-main{
-    display:block;
-    position: fixed;
-    left: 0;
-    background-color: white;
-    max-width: 1000px;
-    padding: 2em;
-}
-
-h1{
-    font-family: "Instrument Sans";
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    text-transform: uppercase;
-    font-size: 96px;
-    color: #5A6338;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-p{
-    font-family: "Instrument Sans";
-    font-style: normal;
-    font-weight: 400;
-    line-height: 3;
-    font-size: 28px;
-    color: #0A3641;
-}
-
-.frame{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-
-.title p{
-    grid-column-start: 1;
-    font-weight: 600;
-    text-transform: uppercase;
-}
-
-.content{
-    grid-column-start: 2;
-}
-
-/*FOOTER DESIGN START*/
-
-footer{
-    position:absolute;
-    bottom:0;
-    width: 100%;
-    justify-content: center;
-    background-color: white;
-    display: flex;
-}
-
-
-footer ul{
-    list-style: none;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-footer ul li i {
-    margin: 40px;
-    font-size: 55px;
+    .frame, .content, .title{
+        display: block;
+    }
 }
