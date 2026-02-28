@@ -17,11 +17,12 @@ The purpose of this project is to practice the following:
 - CSS Media Queries
 - User-oriented testing
 
-## Built With
+## Technologies
 
-Tech-stack
-- HTML5
-- CSS3
+- HTML
+- CSS
+- ESLint
+- Prettier
 
 ## Getting Started
 
@@ -62,3 +63,7 @@ Here you can detail any information you want to provide regarding contributing t
 ## Acknowledgments
 
 Thank you to teachers at Noroff for being so helpful
+
+
+## Author
+Tomine Rønningen Haug - @tominehaug
