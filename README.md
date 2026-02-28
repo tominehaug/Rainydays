@@ -21,7 +21,6 @@ The purpose of this project is to practice the following:
 
 - HTML
 - CSS
-- ESLint
 - Prettier
 
 ## Getting Started
@@ -62,8 +61,6 @@ Here you can detail any information you want to provide regarding contributing t
 
 ## Acknowledgments
 
-Thank you to teachers at Noroff for being so helpful
-
-
+Thank you to teachers at Noroff for being so helpful.
 ## Author
 Tomine Rønningen Haug - @tominehaug
