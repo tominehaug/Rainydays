@@ -2,11 +2,11 @@
 
 ![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
 
-Online store for rain jackets! It is the product of a cross course project from my first semester of Front-End Development studies at Noroff Vocational School.
+Online store for rain jackets! The product of a cross course project from my first semester of Front-End Development studies at Noroff Vocational School.
 
 ## Description
 
-The design is self made from an earlier course, and the coding languages for this course was limited to HTML and CSS. 
+The design is self made from an earlier course, and the coding languages for this course was limited to HTML and CSS.
 The purpose of this project is to practice the following:
 
 - Understanding and practical knowledge in coding with HTML and CSS
@@ -62,5 +62,7 @@ Here you can detail any information you want to provide regarding contributing t
 ## Acknowledgments
 
 Thank you to teachers at Noroff for being so helpful.
+
 ## Author
+
 Tomine Rønningen Haug - @tominehaug
