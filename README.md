@@ -1,6 +1,6 @@
 # Rainydays
 
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![RainyDays project screenshot](https://raw.githubusercontent.com/tominehaug/portfolio/main/images/rainydays.jpeg)
 
 Online store for rain jackets! The product of a cross course project from my first semester of Front-End Development studies at Noroff Vocational School.
 
